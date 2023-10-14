@@ -1,0 +1,31 @@
+/* Styling for the navbar */
+.navbar {
+    height: 100px; /* Set the height of the navbar */
+    
+    /* Styling for the wrapper within the navbar */
+    .wrapper {
+        max-width: 1366px; /* Set the maximum width of the wrapper */
+        margin: auto; /* Center the wrapper horizontally */
+        display: flex; /* Use flexbox for layout */
+        align-items: center; /* Center items vertically within the wrapper */
+        justify-content: space-between; /* Space items evenly horizontally within the wrapper */
+        height: 100%; /* Set the height of the wrapper to 100% */
+
+        /* Styling for spans within the wrapper */
+        span {
+            font-weight: bold; /* Set bold font weight for spans */
+        }
+
+        /* Styling for the social section within the wrapper */
+        .social {
+            display: flex; /* Use flexbox for layout within the social section */
+            gap: 20px; /* Set the gap between social elements */
+
+            /* Styling for images within the social section */
+            img {
+                width: 18px; /* Set the width of social icons */
+                height: 18px; /* Set the height of social icons */
+            }
+        }
+    }
+}
