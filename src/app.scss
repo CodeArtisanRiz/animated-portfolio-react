@@ -1,0 +1,31 @@
+/* Apply scroll snapping for vertical scrolling */
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+/* Reset default styling for all elements */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif; /* Set default font family for all elements */
+}
+
+/* Body styling */
+body {
+    background-color: #0c0c1d; /* Set background color for the body */
+    color: lightgray; /* Set text color for the body */
+}
+
+/* Styling for anchor (link) elements */
+a {
+    text-decoration: none; /* Remove default underline for links */
+    color: inherit; /* Inherit color from parent element (body in this case) */
+}
+
+/* Styling for sections */
+section {
+    height: 100vh; /* Set the height of each section to 100% of the viewport height */
+    scroll-snap-align: center; /* Snap each section to the center on scroll */
+}
