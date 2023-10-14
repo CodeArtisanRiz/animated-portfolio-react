@@ -1,6 +1,11 @@
 /* Styling for the navbar */
 .navbar {
     height: 100px; /* Set the height of the navbar */
+    padding-left: 10%; /* Set padding to fix overlapping */
+    padding-right: 10%;/* Set padding to fix overlapping */
+
+    // for mob/tab increase marginpadding
+  
     
     /* Styling for the wrapper within the navbar */
     .wrapper {
@@ -15,7 +20,34 @@
         span {
             font-weight: bold; /* Set bold font weight for spans */
         }
+        // @import "../../app.scss";
 
+        .navbar {
+          height: 100px;
+        
+          .wrapper {
+            max-width: 1366px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        
+            span {
+              font-weight: bold;
+            }
+        
+            .social {
+              display: flex;
+              gap: 20px;
+        
+              img {
+                width: 18px;
+                height: 18px;
+              }
+            }
+          }
+        }
         /* Styling for the social section within the wrapper */
         .social {
             display: flex; /* Use flexbox for layout within the social section */
