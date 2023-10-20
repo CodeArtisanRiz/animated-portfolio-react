@@ -75,7 +75,7 @@ const Hero = () => {
         iOS Android React Java Php
       </motion.div>
       <div className="imageContainer">
-        <img src="/hero1.png" alt="" />
+        <img src="/riz.png" alt="" />
       </div>
     </div>
   );
