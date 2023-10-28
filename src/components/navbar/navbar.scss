@@ -1,63 +1,39 @@
-/* Styling for the navbar */
+@import "../../app.scss";
+
 .navbar {
-    height: 100px; /* Set the height of the navbar */
-    padding-left: 10%; /* Set padding to fix overlapping */
-    padding-right: 10%;/* Set padding to fix overlapping */
+  height: 100px;
+  padding-left: 10%; /* Set padding to fix overlapping */
+  padding-right: 10%;/* Set padding to fix overlapping */
 
-    // for mob/tab increase marginpadding
-  
-    
-    /* Styling for the wrapper within the navbar */
-    .wrapper {
-        max-width: 1366px; /* Set the maximum width of the wrapper */
-        margin: auto; /* Center the wrapper horizontally */
-        display: flex; /* Use flexbox for layout */
-        align-items: center; /* Center items vertically within the wrapper */
-        justify-content: space-between; /* Space items evenly horizontally within the wrapper */
-        height: 100%; /* Set the height of the wrapper to 100% */
+  .wrapper {
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
 
-        /* Styling for spans within the wrapper */
-        span {
-            font-weight: bold; /* Set bold font weight for spans */
-        }
-        // @import "../../app.scss";
-
-        .navbar {
-          height: 100px;
-        
-          .wrapper {
-            max-width: 1366px;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 100%;
-        
-            span {
-              font-weight: bold;
-            }
-        
-            .social {
-              display: flex;
-              gap: 20px;
-        
-              img {
-                width: 18px;
-                height: 18px;
-              }
-            }
-          }
-        }
-        /* Styling for the social section within the wrapper */
-        .social {
-            display: flex; /* Use flexbox for layout within the social section */
-            gap: 20px; /* Set the gap between social elements */
-
-            /* Styling for images within the social section */
-            img {
-                width: 18px; /* Set the width of social icons */
-                height: 18px; /* Set the height of social icons */
-            }
-        }
+    @include mobile {
+      justify-content: flex-end;
+      padding: 20px;
     }
+
+    span {
+      font-weight: bold;
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    .social {
+      display: flex;
+      gap: 20px;
+
+      img {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
 }
