@@ -1,9 +1,11 @@
 @import "../../app.scss";
 
 .hero {
-  height: calc(100vh - 100px);
+  margin-top: 10%;
+  // height: calc(100vh - 100px);
+  height: 100%;
   overflow: hidden;
-  background: linear-gradient(180deg, #0c0c1d, #111132);
+  // background: linear-gradient(180deg, #0c0c1d, #111132);
   position: relative;
 
   .wrapper {
@@ -67,7 +69,7 @@
     right: 0;
 
     @include mobile {
-      height: 50%;
+      height: 60%;
       width: 100%;
       top: unset;
       bottom: 0;
@@ -76,7 +78,7 @@
     img{
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 
