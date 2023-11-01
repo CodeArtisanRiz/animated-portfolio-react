@@ -24,6 +24,7 @@ import {
     tripguide,
     threejs,
   } from "../assets";
+  // import {} from "../assets/"
   
   export const navLinks = [
     {
@@ -31,7 +32,7 @@ import {
       title: "About",
     },
     {
-      id: "ork",
+      id: "work",
       title: "Work",
     },
     {
@@ -198,9 +199,9 @@ import {
   
   const projects = [
     {
-      name: "Campus Companion",
+      name: "GCC Edu+",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Experience the utmost convenience and efficiency of college life with GCC Edu+. This app, specifically designed for Gurucharan College, Silchar, offers an array of features to help you stay on top of your studies and stay informed about the latest happenings in the college. With GCC Edu+, you can easily access important notices, previous years' question papers, and other resources with just a few taps.",
       tags: [
         {
           name: "react",
@@ -260,6 +261,69 @@ import {
       image: tripguide,
       source_code_link: "https://github.com/",
     },
+    // {
+    //   name: "Trip Guide",
+    //   description:
+    //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    //   tags: [
+    //     {
+    //       name: "nextjs",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "supabase",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "css",
+    //       color: "pink-text-gradient",
+    //     },
+    //   ],
+    //   image: tripguide,
+    //   source_code_link: "https://github.com/",
+    // },
+    // {
+    //   name: "Trip Guide",
+    //   description:
+    //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    //   tags: [
+    //     {
+    //       name: "nextjs",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "supabase",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "css",
+    //       color: "pink-text-gradient",
+    //     },
+    //   ],
+    //   image: tripguide,
+    //   source_code_link: "https://github.com/",
+    // },
+    // {
+    //   name: "Trip Guide",
+    //   description:
+    //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    //   tags: [
+    //     {
+    //       name: "nextjs",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "supabase",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "css",
+    //       color: "pink-text-gradient",
+    //     },
+    //   ],
+    //   image: tripguide,
+    //   source_code_link: "https://github.com/",
+    // },
   ];
   
   export { services, technologies, experiences, testimonials, projects };

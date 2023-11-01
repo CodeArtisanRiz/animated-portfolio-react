@@ -1,5 +1,7 @@
 @import "../../app.scss";
 .works{
-    // height: 100vh;
-    padding-top: 50px;
+    @include mobile {
+        // height: calc(100vh - 50px);
+        margin-top: 50px;
+      }
 }

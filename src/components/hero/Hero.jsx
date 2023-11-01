@@ -44,20 +44,37 @@ const Hero = () => {
       <div className="wrapper">
 
 
-      <div className = "relative w-full h-screen mx-auto">    
-        <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5 `}>
+      <motion.div
+      variants={textVariants}
+      initial="initial"
+      animate="animate"
+      className = "relative w-full h-screen mx-auto">    
+        <motion.div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5 `}>
           <div className = "flex flex-col justify-center items-center mt-5">
             <div className='w-5 h-5 rounded-full bg-[#55aec0]'/>
             <div className="w-1 m:h-80 h-40 violet-gradient"/>
           </div>
-          <div>
-            <h1 className={`${styles.heroHeadText} text-white`}>Hi I'm <span className='text-[#55aec0] '>Rizwan</span></h1>
-            <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            UI/UX Designer, <br />Android, iOS<br className='sm:block hidden'/> and Web Developer.
-            </p>
-          </div>
-        </div>
-    </div>
+          <motion.div>
+            <motion.h1 variants={textVariants} className={`${styles.heroHeadText} text-white`}>Hi I'm <span className='text-[#55aec0] '>Rizwan</span>
+            </motion.h1>
+            <motion.p variants={textVariants} className={`${styles.heroSubText} mt-2 text-white-100`}>
+            UI/UX Designer, <br />Android, iOS and Web Developer.
+            </motion.p>
+          </motion.div>
+        </motion.div>
+        {/* <motion.div variants={textVariants} className="buttons">
+            <motion.button variants={textVariants}>
+              See the Latest Works
+            </motion.button>
+            <motion.button variants={textVariants}>Contact Me</motion.button>
+        </motion.div> */}
+          {/* <motion.img
+            variants={textVariants}
+            animate="scrollButton"
+            src="/scroll.png"
+            alt=""
+          /> */}
+    </motion.div>
         {/* <motion.div
           className="textContainer"
           variants={textVariants}

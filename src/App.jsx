@@ -33,20 +33,26 @@ const App = () => {
       
     </section>
     {/* <Hero3D/> */}
-    <section><About/></section>
+    {/* <section> */}
+      
+      {/* </section> */}
     <section id="Services"className="section"><Parallax type="services"/></section>
+    {/* <section id="About" className="section"> */}
+      
+      {/* </section> */}
     
     <section className="section"><Services/></section>
+    <About/>
     <section id="Portfolio" className="section"><Parallax type="portfolio"/></section>
     <Portfolio />
     {/* <section id="Contact"><Contact/></section> */}
     {/* <section> */}
-
-    <Works />
+    
       {/* <Experience/>
     <Feedbacks className="section"/> */}
-
-
+    <div id="work">
+      <Works />
+    </div>
 
     <div id="Contact" className="relative z-0">
         <Contact2 className="section"/>
